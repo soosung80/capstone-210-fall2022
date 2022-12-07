@@ -1,0 +1,61 @@
+[
+    {
+        store_name: "Wholefoods Market"
+        lat: 40.75294109055737
+        lng: -73.99817016423056
+        address: "450 W 33RD ST, NEW YORK, NY, 10001"
+        grocery_list: [
+            {
+                item_name: "Milk"
+                brand: "Horizon"
+                alternative: "Creamline Whole Milk"
+            },
+            {
+                item_name: "Liquid Egg Whites"
+                brand: "Eggs"
+                alternative: "All-Day Egg Scramble"
+            },
+            {
+                item_name: "Greek Yogurt (with Honey)"
+                brand: "Yoplait"
+                alternative: "Yogurt (Vanilla)"
+            }
+    },
+    {
+        store_name: "Aldi"
+        lat: 40.83025801799116
+        lng: -73.89531967514107
+        address: "3006 THIRD AVE, BRONX, NY, 10455"
+        grocery_list: [
+            {
+                item_name: "Milk"
+                brand: "Horizon"
+                alternative: "Milk (Lactose Free, Whole Milk)"
+            },
+            {
+                item_name: "Liquid Egg Whites"
+                brand: "Eggs"
+                alternative: "Liquid Egg Substitute"
+            },
+            {
+                item_name: "Greek Yogurt (with Honey)"
+                brand: "Yoplait"
+                alternative: "Yogurt (Vanilla)"
+            }
+    }
+]
+
+
+/*aws sagemaker-runtime invoke-endpoint \
+    --endpoint-name "https://6viovomo6f.execute-api.us-east-1.amazonaws.com/default" \
+    --body {"user_preference":{"user_location":{"lat":40.76104711377761,"lng":-73.98332121025068},"travel_mode":"walking","distance":1,"budget":50,"dietary_restrictions":{"kosher":false,"pescatarian":false,"no_red_meat":false,"dairy_free":false,"gluten_free":false}},"groceries":["apple","yogurt","milk"]} \
+    output_file.txt*/
+
+/*aws sagemaker-runtime invoke-endpoint \
+    --endpoint-name https://4xffa2sqw0.execute-api.us-east-1.amazonaws.com/default/WriteS3 \
+    --body fileb://input.json \
+    output_file.txt
+
+    'body': '{"user_preference":{"user_location":{"lat":"40.76104711377761","lng":"-73.98332121025068"},"travel_mode":"walking","distance":"2","budget":"100","dietary_restrictions":{"kosher":"true","pescatarian":"false","no_red_meat":"false","dairy_free":"false","gluten_free":"false"}},"groceries":["Greek Yogurt","Almond Milk","Sour Cream","Bratwurst"]}', 'isBase64Encoded': False}
+            
+    curl -X POST https://2h18j1m48b.execute-api.us-east-1.amazonaws.com/default/BargainGoodsModel -H "Content-Type: application/json" -d '{"user_preference":{"user_location":{"lat":"40.76104711377761","lng":"-73.98332121025068"},"travel_mode":"walking","distance":"2","budget":"100","dietary_restrictions":{"kosher":"true","pescatarian":"false","no_red_meat":"false","dairy_free":"false","gluten_free":"false"}},"groceries":["Greek Yogurt","Almond Milk","Sour Cream","Bratwurst"]}'*/

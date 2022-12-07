@@ -1,0 +1,24 @@
+{
+  "user_preference": {
+    "user_location": {
+      "lat": "40.76104711377761",
+      "lng": "-73.98332121025068"
+    },
+    "travel_mode": "walking", 
+    "distance": "2", 
+    "budget": "100",  
+    "dietary_restrictions": {
+      "kosher": "true",
+      "pescatarian": "false",
+      "no_red_meat": "false",
+      "dairy_free": "false",
+      "gluten_free": "false"
+    }
+  },
+  "groceries": [
+    "milk",
+    "apple",
+    "chicken",
+    "potato"
+  ]
+}

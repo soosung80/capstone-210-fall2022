@@ -1,0 +1,74 @@
+[
+  {
+    "store_name": "Wholefoods Market",
+    "lat": 40.75294109055737,
+    "lng": -73.99817016423056,
+    "address": "450 W 33RD ST, NEW YORK, NY, 10001",
+    "total": 7.53,
+    "distance": 0.5,
+    "travel_time": 10,
+    "grocery_list": [
+      {
+        "item_name": "Milk",
+        "brand": "Horizon",
+        "unit_price": 2.95,
+        "unit": "$/ea",
+        "alternative": "Creamline Whole Milk",
+        "alternative_price": 2.50
+      },
+      {
+        "item_name": "Liquid Egg Whites",
+        "brand": "Eggs",
+        "unit_price": 0.19,
+        "unit": "$/oz",
+        "alternative": "All-Day Egg Scramble",
+        "alternative_price": 0.17
+      },
+      {
+        "item_name": "Greek Yogurt (with Honey)",
+        "brand": "Zola",
+        "unit_price": 0.17,
+        "unit": "$/oz",
+        "alternative": "Yogurt (Vanilla)",
+        "alternative_price": 0.15
+      }
+    ]
+  },
+  {
+    "store_name": "Aldi",
+    "lat": 40.83025801799116,
+    "lng": -73.89531967514107,
+    "address": "3006 THIRD AVE, BRONX, NY, 10455",
+    "total": 5.95,
+    "distance": 0.7,
+    "travel_time": 15,
+    "grocery_list": [
+      {
+        "item_name": "Milk",
+        "brand": "Horizon",
+        "unit_price": 1.95,
+        "unit": "$/ea",
+        "alternative": "Milk (Lactose Free, Whole Milk)",
+        "alternative_price": 1.50
+      },
+      {
+        "item_name": "Liquid Egg Whites",
+        "brand": "Eggs",
+        "unit_price": 0.09,
+        "unit": "$/oz",
+        "alternative": "Liquid Egg Substitute",
+        "alternative_price": 0.07
+      },
+      {
+        "item_name": "Greek Yogurt (with Honey)",
+        "brand": "Yoplait",
+        "unit_price": 0.17,
+        "unit": "$/oz",
+        "alternative": "Yogurt (Vanilla)",
+        "alternative_price": 0.15
+      }
+    ]
+  }
+]
+
+
