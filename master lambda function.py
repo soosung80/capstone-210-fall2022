@@ -66,7 +66,7 @@ def lambda_handler(event, context):
     df3 = pd.read_csv(StringIO(csv_string3))
     
     # API setup for googlemaps
-    API_key = 'AIzaSyCRvZm1MCZuU7sVyBd664xa0PFZcyFWGm4' 
+    API_key = # replace with your key
 
     gmaps = googlemaps.Client(key=API_key)
     
